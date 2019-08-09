@@ -1,14 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Display from './components/Display'
 import Dashboard from './components/Dashboard'
 
 function App() {
+  const [strikes, setStrikes] = useState(0);
+  const [balls, setBalls] = useState(0);
   return (
     <div className="App">
-      <Display strikes={2} balls={3}/>
-      <Dashboard strike={() => console.log('strike')}/>
+      <Display strikes={strikes} balls={balls}/>
+      <Dashboard />
     </div>
   );
 }
