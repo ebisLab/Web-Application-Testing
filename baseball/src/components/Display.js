@@ -6,7 +6,7 @@ function Display(props){
         <>
         <h1>Dispaly Section</h1>
         <div>Strikes: {props.strikes}</div>
-        <div>Ball: {props.ball}</div>
+        <div>Balls: {props.balls}</div>
 
         <Dashboard />
         </>

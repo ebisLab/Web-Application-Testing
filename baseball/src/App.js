@@ -6,7 +6,7 @@ import Display from './components/Display'
 function App() {
   return (
     <div className="App">
-      <Display strikes={2} ball={3}/>
+      <Display strikes={2} balls={3}/>
     </div>
   );
 }
