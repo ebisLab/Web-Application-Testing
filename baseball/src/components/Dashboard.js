@@ -4,10 +4,10 @@ function Dashboard(props){
     return (
         <div>
             <h1>Dashboard Section</h1>
-            <button>Strike</button>
-            <button>Ball</button>
-            <button>Foul</button>
-            <button>Hit</button>
+            <button onClick={props.strike}>Strike</button>
+            <button onClick={props.ball}>Ball</button>
+            <button onClick={props.foul}>Foul</button>
+            <button onClick={props.hit}>Hit</button>
             
             </div>
     );

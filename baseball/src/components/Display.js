@@ -8,7 +8,7 @@ function Display(props){
         <div>Strikes: {props.strikes}</div>
         <div>Balls: {props.balls}</div>
 
-        <Dashboard />
+        
         </>
     );
 };
