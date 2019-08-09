@@ -16,4 +16,15 @@ describe('<Dashboard>', () => {
         fireEvent.click(strikeBtn);
         expect(clicked).toBe(true);
     });
+    //fake function
+    it('strike part Something Frenchy - this is a fake function', () => {
+        // let clicked = false;
+        const click = jest.fn();
+
+        const {getByText} = render (<Dashboard strike={click}/>);
+        const strikeBtn = getByText(/strike/i)
+        //Clicking lets us interact with DOM elements
+        fireEvent.click(strikeBtn);
+        expect(click).toBeCalled();
+    });
 })
